@@ -1,6 +1,10 @@
 # DIO - Trilha .NET - API e Entity Framework
 www.dio.me
 
+## Solução do Desafio e Considerações sobre Versão:
+O desafio foi completado de acordo com as especificações. Na máquina que o projeto foi programado a versão do .NET é 8.0. Logo, houve mudança no arquivo TrilhaApiDesafio.csproj, na tag TargetFramework, de 6.0 para 8.0. Caso sua versão seja diferente, altere o arquivo mencionado na referida tag de net8.0 para net6.0 ou para a versão destino.
+
+
 ## Desafio de projeto
 Para este desafio, você precisará usar seus conhecimentos adquiridos no módulo de API e Entity Framework, da trilha .NET da DIO.
 
@@ -32,14 +36,14 @@ Não se esqueça de gerar a sua migration para atualização no banco de dados.
 
 | Verbo  | Endpoint                | Parâmetro | Body          |
 |--------|-------------------------|-----------|---------------|
-| GET    | /Tarefa/{id}            | id        | N/A           |
-| PUT    | /Tarefa/{id}            | id        | Schema Tarefa |
-| DELETE | /Tarefa/{id}            | id        | N/A           |
-| GET    | /Tarefa/ObterTodos      | N/A       | N/A           |
-| GET    | /Tarefa/ObterPorTitulo  | titulo    | N/A           |
-| GET    | /Tarefa/ObterPorData    | data      | N/A           |
-| GET    | /Tarefa/ObterPorStatus  | status    | N/A           |
-| POST   | /Tarefa                 | N/A       | Schema Tarefa |
+***| GET    | /Tarefa/{id}            | id        | N/A           |***
+***| PUT    | /Tarefa/{id}            | id        | Schema Tarefa |***
+***| DELETE | /Tarefa/{id}            | id        | N/A           |***
+***| GET    | /Tarefa/ObterTodos      | N/A       | N/A           |***
+***| GET    | /Tarefa/ObterPorTitulo  | titulo    | N/A           |***
+***| GET    | /Tarefa/ObterPorData    | data      | N/A           |***
+***| GET    | /Tarefa/ObterPorStatus  | status    | N/A           |***
+***| POST   | /Tarefa                 | N/A       | Schema Tarefa |***
 
 Esse é o schema (model) de Tarefa, utilizado para passar para os métodos que exigirem
 
